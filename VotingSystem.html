@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+<style>
+  .body{
+    margin-top: 5%;
+    display: flex;
+    /* padding: 30px; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    color: rgb(151, 151, 95)
+    /* background: linear-gradient(red,rgb(45, 184, 96)); */
+    /* background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfnIRAEDU6EPLv_gFujTNmHSx2x_fmK5HAwA&usqp=CAU://image.shutterstock.com/image-illustration/sunrise-glossy-paper-abstract-purple-600w-133686230.jpg://images.pexels.com/photos/1152662/pexels-photo-1152662.jpeg?auto=compress&cs=tinysrgb&w=1600://images.pexels.com/photos/302743/pexels-photo-302743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ; */
+    /* align-self: end;  */
+    
+  }   
+.card {
+  box-shadow: 0 0px 20px 0 rgba(226, 18, 18, 0.96);
+  transition: 0.3s;
+  width: 40%;
+  /* padding-bottom: 1%; */
+  padding: 20px;
+  border-radius: 5px;
+  margin: 30px;
+  /* padding: 2px 40px; */
+  background-color: rgba(0,0,0,0.4);
+}
+
+.card:hover {
+  border-radius: 15%;
+  box-shadow: 0 4px 8px 5px rgba(226, 18, 18, 0.96);
+  /* border: 2px solid rgb(14, 11, 11); */
+}
+
+img {
+  border-radius: 50%;
+  transition: 0.4s;
+
+  box-shadow: 0 8px 16px 0 rgb(255, 0, 0);
+  /* border:  5px solid rgba(44, 155, 126, 0.566); */
+}
+img:hover{
+  border-radius: 30%;
+  /* box-shadow: 0 8px 16px 0 rgba(221, 7, 7, 0.916); */
+  
+
+}
+.container {
+  padding: 2px 16px;
+}
+.image{
+    width:100%;
+}
+.container button:hover{
+  background-color:  rgb(238, 4, 4);
+  transform: scale(0.89);
+
+}
+.container button{
+  /* margin-top:%; */
+  width: 100%;
+  background-color:  rgba(200, 0, 0, 0.777);
+  /* box-shadow: 0 4px 5px 0 rgba(186, 77, 77, 0.752); */
+  height: 30px;
+  font-weight: 900;
+  font-family:  Verdana, sans-serif;
+  text-align: center;
+  /* margin-left: 10%; */
+  border-radius: 20px;
+}
+</style>
+</head>
+<body class="body">
+  <script>
+     var amruthVote = 1
+     
+    function amruth(){
+     var amruthVotes   = document.getElementById("count5")
+     amruthVotes.value = amruthVote
+     document.getElementById("count5").innerHTML = amruthVote++
+    console.log(amruthVote)
+    }
+    var VijayVote = 1
+     
+     function vijay(){
+      var VijayVotes   = document.getElementById("count1")
+      VijayVotes.value = VijayVote
+      document.getElementById("count1").innerHTML = VijayVote++
+     console.log(VijayVote)
+     }
+     var jaswanthVote = 1
+     
+     function jaswanth(){
+      var jaswanthVotes   = document.getElementById("count2")
+      jaswanthVotes.value = jaswanthVote
+      document.getElementById("count2").innerHTML = jaswanthVote++
+     console.log(jaswanthVote)
+     }
+     var saiVote = 1
+     
+     function sai(){
+      var saiVotes   = document.getElementById("count3")
+      saiVotes.value = saiVote
+      document.getElementById("count3").innerHTML = saiVote++
+     console.log(saiVote)
+     }
+     var prakashVote = 1
+     function prakash(){
+      var prakashVotes   = document.getElementById("count4")
+      prakashVotes.value = prakashVote
+      document.getElementById("count4").innerHTML = prakashVote++
+     console.log(prakashVote)
+     }
+  </script>
+
+<!-- <h2>Round Card</h2> -->
+
+<div class="card">
+    <div class="image"></div>
+  <img src="vijay.jpg"  style="width:100%;height: 60%;">
+  <div class="container">
+    <h2 id="name" ><b>Vijay Singh</b></h2> 
+    <p style="font-size: x-large;width: 100%;color:rgba(255, 0, 0, 0.973) ;">Instagram party</p> 
+    <div><h3 style="text-align: center;color: rgb(255, 51, 0);" id="count1">0</h3></div>
+    <button onclick="vijay()">Vote</button>
+  </div>
+</div>
+<!-- <h2>Round Card</h2> -->
+
+<div class="card">
+  <img src="imageFour.jpg"  style="width:100%; height: 60%;"> 
+  <div class="container">
+    <h2><b>Jaswanth Singh</b></h2> 
+    <p style="font-size: x-large;color: rgb(250, 3, 254);">Telegram party</p> 
+    <div><h3 style="text-align: center;color: rgb(250, 3, 255);" id="count2">0</h3></div>
+    <button onclick="jaswanth()">Vote</button>
+  </div>
+</div>
+<!-- <h2>Round Card</h2> -->
+
+<div class="card">
+  <img src="sainram2.jpg" alt="Avatar" style="width:100%;height: 60%;">
+  <div class="container">
+    <h2><b>Sairam Singh</b></h2>
+    <p style="font-size: x-large;color: rgba(9, 56, 246, 0.699);">Whatsapp party</p> 
+    <div><h3 style="text-align: center;color: rgb(9, 56, 246);" id="count3">0</h3></div>
+    <button onclick="sai()">Vote</button>
+  </div>
+</div>
+<!-- <h2>Round Card</h2> -->
+
+<div class="card">
+    <img src="prakash.jpg" alt="Avatar" style="width:100%;height: 60%;"> 
+    <div class="container">
+      <h2><b>Prakash Singh</b></h2> 
+      <p style="font-size: x-large;color: rgb(214, 225, 15);">Linkedin party</p> 
+      <div><h3 style="text-align: center;color: rgb(214, 255, 15);" id="count4">0</h3></div>
+      <button onclick="prakash()" >Vote</button>
+    </div>
+  </div>
+  <!-- <h2>Round Card</h2> -->
+
+<div class="card">
+    <img src="amruthOne.jpeg" alt="Avatar" style="width:100%;height: 60%;"> 
+    <div class="container">
+      <h2><b>Amruth Singh</b></h2> 
+      <p style="font-size: x-large;color: rgb(14, 253, 14);">Facebook party</p> 
+      <div><h3 style="text-align: center;color: rgb(14, 253, 14);" id="count5" value="0">0</h3></div>
+      <button onclick="amruth()">Vote</button>
+    </div>
+  </div>
+
+</body>
+</html> 
